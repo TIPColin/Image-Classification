@@ -9,10 +9,10 @@ Example results of our method on images from the highly challenging dataset of [
 
 ## Prerequisites
 * Ubuntu 16.04
-* Python >=3.7
+* Python >=3.7 (>=3.8 for windows)
 * clang （>=8.0 for mac）
 * NVIDIA GPU CUDA 9.0 + cuDNN 7.1.4
-* Jittor (tested on 0.4.1 and 1.0.0)
+* Jittor 
 * Pillow (Python Imaging Library)
 * Tqdm (Progress Bar for Python)
 
@@ -24,17 +24,6 @@ python train.py --batch-size 64 --patch-size 96 --epoch 1200 --lr 0.001
 ```
 * Testing: Run ```python test.py```.
 
-## Citation
-```latex
-@article{zhang2020distinguishing,
-  title={Distinguishing Computer-Generated Images from Natural Images Using Channel and Pixel Correlation},
-  author={Zhang, Rui-Song and Quan, Wei-Ze and Fan, Lu-Bin and Hu, Li-Ming and Yan, Dong-Ming},
-  journal={Journal of Computer Science and Technology},
-  volume={35},
-  pages={592--602},
-  year={2020},
-  publisher={Springer}
-}
-```
+
 ## Acknowledgment
 This code is an reimplement of code referring to [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and a Caffe version [NIvsCG](https://github.com/weizequan/NIvsCG).
